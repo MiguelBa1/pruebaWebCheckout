@@ -1,0 +1,36 @@
+@import url('base.css');
+form {
+	height: 30vh;
+	border-radius: 10px;
+	background-color: white;
+	padding: 3em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+form label{
+	font-size: 1.5em;
+} 
+form input{
+	font-size: 1em;
+	padding: .5em;
+}
+.submit {
+	width: 100%;
+}
+@media (max-height: 950px) {
+	form {
+		height: 40vh;
+	}
+}
+@media (max-height: 700px) {
+	form {
+		height: 50vh;
+	}
+}
+@media (max-height: 600px) {
+	form {
+		height: 60vh;
+	}
+}
