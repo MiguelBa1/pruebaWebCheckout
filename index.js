@@ -8,6 +8,7 @@ require('dotenv').config()
 const loginRoutes = require('./routes/login')
 const ventaRoutes = require('./routes/payment')
 const productsRoute = require('./routes/products')
+const responseRoute = require('./routes/response')
 
 const app = express()
 const cookieSecret = process.env.COOKIE_SECRET
@@ -34,5 +35,6 @@ app.set('view engine', 'ejs')
 app.use('/login', loginRoutes)
 app.use('/payment', ventaRoutes)
 app.use('/products', productsRoute)
+app.use('/response', responseRoute)
 
 app.listen(3000, () => console.log('Server started'))

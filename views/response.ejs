@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/response.css">
+		<link rel="shortcut icon" href="#">
+	</head>
+	<body>
+		<div class="container">
+			<h1>N° PETICIÓN : <%= requestId %> <%= status%></h1>
+			<div class="" >
+				<strong>Informacion de la operación: </strong> <%= message%>
+				<strong>Total: </strong> <%= total%>
+			</div>
+			<button id="btnpagar"><a href="/payment">Volver</a></button>
+		</div>
+	</body>
+</html>

@@ -46,6 +46,7 @@ paymentCtrl.processPayment = (req, res) => {
     client.registerMethod("createRequest", "https://test.placetopay.com/redirection/api/session/", "POST");
 
     client.methods.createRequest(request, function (data, response) {
+        req.session.requestId = data['requestId']
         res.redirect(data['processUrl'])
     })
 }
