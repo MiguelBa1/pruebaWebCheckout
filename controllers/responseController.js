@@ -38,9 +38,9 @@ responseCtrl.renderResponse = (req, res) => {
         let { message, status } = states[data.status.status]
         total = data.request.payment.amount.total
 
-        console.log(data)
+        let currency = (data.request.payment.amount.currency)
 
-        res.render('response', {requestId: req.session.requestId, message, status, total })
+        res.render('response', {requestId: req.session.requestId, message, status, total: total+' '+currency })
     })
 }
 

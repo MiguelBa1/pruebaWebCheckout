@@ -7,7 +7,6 @@ const paymentCtrl = {}
 
 paymentCtrl.processPayment = (req, res) => {
     let formData = req.body
-    //res.send('Sisas')
     const client = new Client();
     let authGenerator = new RedirectionAuth(process.env.TOKEN, process.env.SECRETKEY);
     let auth = authGenerator.asObject();

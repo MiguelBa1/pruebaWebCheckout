@@ -11,10 +11,14 @@
 		<div class="container">
 			<h1>N° PETICIÓN : <%= requestId %> <%= status%></h1>
 			<div class="" >
-				<strong>Informacion de la operación: </strong> <%= message%>
-				<strong>Total: </strong> <%= total%>
-			</div>
-			<button id="btnpagar"><a href="/payment">Volver</a></button>
+				<div >
+					<strong>Informacion de la operación: </strong> <%= message%>
+				</div>
+				<div>
+					<strong>Total: </strong> <%= total%>
+				</div>
+		</div>
+		<button id="btnpagar" onclick="location.href='payment'">Volver</button>
 		</div>
 	</body>
 </html>
